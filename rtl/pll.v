@@ -10,6 +10,7 @@ module pll (
 		input  wire        rst,               //             reset.reset
 		output wire        outclk_0,          //           outclk0.clk
 		output wire        outclk_1,          //           outclk1.clk
+		output wire        outclk_2,          //           outclk2.clk
 		output wire        locked,            //            locked.export
 		input  wire [63:0] reconfig_to_pll,   //   reconfig_to_pll.reconfig_to_pll
 		output wire [63:0] reconfig_from_pll  // reconfig_from_pll.reconfig_from_pll
@@ -20,6 +21,7 @@ module pll (
 		.rst               (rst),               //             reset.reset
 		.outclk_0          (outclk_0),          //           outclk0.clk
 		.outclk_1          (outclk_1),          //           outclk1.clk
+		.outclk_2          (outclk_2),          //           outclk2.clk
 		.locked            (locked),            //            locked.export
 		.reconfig_to_pll   (reconfig_to_pll),   //   reconfig_to_pll.reconfig_to_pll
 		.reconfig_from_pll (reconfig_from_pll)  // reconfig_from_pll.reconfig_from_pll
@@ -90,7 +92,7 @@ endmodule
 // Retrieval info: 	<generic name="gui_actual_phase_shift1" value="0" />
 // Retrieval info: 	<generic name="gui_duty_cycle1" value="50" />
 // Retrieval info: 	<generic name="gui_cascade_counter2" value="false" />
-// Retrieval info: 	<generic name="gui_output_clock_frequency2" value="54.0" />
+// Retrieval info: 	<generic name="gui_output_clock_frequency2" value="53.693175" />
 // Retrieval info: 	<generic name="gui_divide_factor_c2" value="1" />
 // Retrieval info: 	<generic name="gui_actual_output_clock_frequency2" value="0 MHz" />
 // Retrieval info: 	<generic name="gui_ps_units2" value="ps" />
